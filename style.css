@@ -144,4 +144,24 @@ small {
   .left {
     margin-top: 128px;
   }
+
+  /* features */
+  article {
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .articles article:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .features-text {
+    margin-left: 32px;
+  }
+
+  .articles article:nth-child(even) .features-text {
+    margin-left: 0;
+    margin-right: 32px;
+  }
 }
